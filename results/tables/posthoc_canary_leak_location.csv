@@ -1,0 +1,5 @@
+model,condition,outputs,exact_leaks,in_evidence_field,after_json,after_json_repeating_system_line,elsewhere
+Llama-3.2-3B-Instruct,canary,60,19,5,14,11,0
+Llama-3.2-3B-Instruct,defence_canary,60,9,7,2,1,0
+Qwen2.5-3B-Instruct,canary,60,0,0,0,0,0
+Qwen2.5-3B-Instruct,defence_canary,60,0,0,0,0,0
