@@ -1,0 +1,19 @@
+{
+  "run_id": "final_qwen",
+  "planned": 1160,
+  "interp_planned": 40,
+  "checks": [
+    "data: sha256 matches the pin; 449 rows, unique ids, every row valid; dev and smoke rows share no stem with rows 0-199 (rows [298, 380] excluded)",
+    "prompts: 449 rows x 17 conditions = 7633 messages equal the brief's wording with one insertion each; options unchanged; canary only in canary system prompts",
+    "parser: 15 fixed cases pass; leak detector and marker: 6 fixed cases pass; quote matcher and first-3-unique quotes: 10 fixed cases pass",
+    "model: snapshot aa8e72537993 = pin; config, generation config and tokenizer files = pinned sha256; no BOS, messages verbatim, prefill last; letters A-R single tokens after the prefill; end-of-turn stops; all weights float16; greedy settings in place",
+    "deletion test: 449 questions split and rebuilt exactly; 39 of 40 Interp rows have >= 4 deletable sentences; scorer reproduces generation on row 448 (gap 0.0e+00); full test ran there (36 passes)"
+  ],
+  "warnings": [],
+  "error": null,
+  "regenerated_identical": [],
+  "pilot_gates": null,
+  "gpu_peak_memory_gb": 7.8,
+  "started_utc": "2026-10-10T21:05:23.229613+00:00",
+  "finished_utc": "2026-10-10T22:21:18.288425+00:00"
+}
