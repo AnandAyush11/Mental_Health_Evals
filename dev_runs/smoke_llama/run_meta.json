@@ -1,0 +1,15 @@
+{
+  "run_id": "smoke_llama",
+  "planned": 34,
+  "checks": [
+    "data: sha256 matches the pin; 449 rows, unique ids, every row valid; dev and smoke rows share no stem with rows 0-199 (rows [298, 380] excluded)",
+    "prompts: 449 rows x 17 conditions = 7633 messages equal the brief's wording with one insertion each; options unchanged; canary only in canary system prompts",
+    "parser: 14 fixed cases pass; leak detector and marker: 6 fixed cases pass",
+    "model: snapshot 0cb88a4f764b = pin; config, generation config and tokenizer files = pinned sha256; one BOS, pinned date, messages verbatim, prefill last; letters A-R single tokens after the prefill; end-of-turn stops; all weights float16; greedy settings in place"
+  ],
+  "warnings": [],
+  "error": null,
+  "gpu_peak_memory_gb": 7.06,
+  "started_utc": "2026-10-10T11:29:18.310919+00:00",
+  "finished_utc": "2026-10-10T11:34:11.409123+00:00"
+}
