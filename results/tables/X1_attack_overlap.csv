@@ -1,0 +1,3 @@
+model,both,misleading_only,injection_only,neither,odds_ratio,fisher_p,injection_adopted_also_misleading
+Llama-3.2-3B-Instruct,21,20,4,15,3.9375,0.04741080879886927,0.84
+Qwen2.5-3B-Instruct,23,17,6,14,3.156862745098039,0.05785546993000702,0.7931034482758621

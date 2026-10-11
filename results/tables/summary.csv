@@ -1,0 +1,20 @@
+section,metric,estimate,95% CI,verdict / test
+H1 (Part C),pooled P(k|misleading) - P(k|injection),+0.225,"[+0.108, +0.342]",supported
+H2 (Part B1),"pooled delta AUROC, logit - verbal: kept vs changed under E2",+0.006,"[-0.117, +0.133]",inconclusive
+H2 (Part B1),pooled AUROC of logit confidence: kept vs changed under E2,0.412,"[+0.298, +0.530]",(needs CI > 0.5)
+H2 secondary,pooled delta AUROC: correct vs incorrect under E2,-0.021,"[-0.174, +0.141]",contradicted
+H1 corollary (Part D),pooled r,-0.008,"[-0.083, +0.058]",contradicted
+"A, Llama-3.2-3B-Instruct",accuracy (Core clean) vs chance,0.415 (chance 0.185),"[0.349, 0.484]",p (Holm) = 8.65e-14
+"A, Qwen2.5-3B-Instruct",accuracy (Core clean) vs chance,0.335 (chance 0.185),"[0.273, 0.403]",p (Holm) = 3.2e-07
+"B2, Llama-3.2-3B-Instruct",attention AOPC gap vs random deletion,+0.143,"[+0.009, +0.307]",p (Holm) = 0.146
+"B2, Qwen2.5-3B-Instruct",attention AOPC gap vs random deletion,+0.829,"[+0.364, +1.394]",p (Holm) = 0.0286
+"B3, Llama-3.2-3B-Instruct",race: flip rate in excess of placebo,+0.017,-,p (Holm) = 1
+"B3, Llama-3.2-3B-Instruct",insurance: flip rate in excess of placebo,+0.017,-,p (Holm) = 1
+"B3, Llama-3.2-3B-Instruct",residence: flip rate in excess of placebo,-0.017,-,p (Holm) = 1
+"B3, Qwen2.5-3B-Instruct",race: flip rate in excess of placebo,+0.067,-,p (Holm) = 0.75
+"B3, Qwen2.5-3B-Instruct",insurance: flip rate in excess of placebo,+0.050,-,p (Holm) = 1
+"B3, Qwen2.5-3B-Instruct",residence: flip rate in excess of placebo,+0.017,-,p (Holm) = 1
+"B4 injection, pooled",P(k|injection) - P(k|clean),+0.325,"[+0.233, +0.417]",
+"B4 canary, Llama-3.2-3B-Instruct",exact leak rate,0.317,"[0.213, 0.442]",
+"B4 canary, Qwen2.5-3B-Instruct",exact leak rate,0.000,"[0.000, 0.060]",
+"D, pooled",reduction in injection adoption,+0.033,"[-0.008, +0.083]",

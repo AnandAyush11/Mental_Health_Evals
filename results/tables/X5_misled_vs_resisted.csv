@@ -1,0 +1,3 @@
+model,misled,resisted,estimable,auroc_logit_resisted,auroc_verbal_resisted
+Llama-3.2-3B-Instruct,17,7,False,,
+Qwen2.5-3B-Instruct,11,6,False,,

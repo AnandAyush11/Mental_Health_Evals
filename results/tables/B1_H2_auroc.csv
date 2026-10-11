@@ -1,0 +1,7 @@
+model,outcome,condition,n_used,excluded_invalid_answer,excluded_no_confidence,n_positive,n_negative,estimable,distinct_verbal,auroc_logit,auroc_verbal,delta
+Llama-3.2-3B-Instruct,kept vs changed,misleading,60,0,0,22,38,True,4,0.3456937799043062,0.4449760765550239,-0.0992822966507177
+Qwen2.5-3B-Instruct,kept vs changed,misleading,60,0,0,22,38,True,3,0.4784688995215311,0.3672248803827751,0.11124401913875598
+Llama-3.2-3B-Instruct,correct vs incorrect,misleading,60,0,0,10,50,True,4,0.336,0.424,-0.08799999999999997
+Qwen2.5-3B-Instruct,correct vs incorrect,misleading,60,0,0,8,52,True,3,0.32211538461538464,0.2764423076923077,0.04567307692307693
+Llama-3.2-3B-Instruct,correct vs incorrect,clean,60,0,0,24,36,True,4,0.53125,0.5243055555555556,0.00694444444444442
+Qwen2.5-3B-Instruct,correct vs incorrect,clean,60,0,0,17,43,True,3,0.5800273597811217,0.4439124487004104,0.13611491108071133

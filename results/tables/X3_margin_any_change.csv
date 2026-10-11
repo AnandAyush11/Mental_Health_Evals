@@ -1,0 +1,7 @@
+model,condition,changed,auroc_minus_margin
+Llama-3.2-3B-Instruct,misleading,38,0.6136363636363636
+Llama-3.2-3B-Instruct,injection,23,0.7837837837837838
+Llama-3.2-3B-Instruct,metadata (any of six),8,0.9158653846153846
+Qwen2.5-3B-Instruct,misleading,38,0.48444976076555024
+Qwen2.5-3B-Instruct,injection,28,0.6171875
+Qwen2.5-3B-Instruct,metadata (any of six),11,0.6512059369202227
